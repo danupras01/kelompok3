@@ -12,11 +12,11 @@
 //Books
 
 $lang['book_not_exist'] = 'Book don\'t exist';
-$lang['book_listing_label'] = 'Books Listing';
-$lang['add_book_title'] = 'Add Book';
-$lang['edit_book_title'] = 'Edit Book';
-$lang['delete_book_title'] = 'Delete Book';
-$lang['auto_catalog_title'] = 'Auto Catalogue';
+$lang['book_listing_label'] = 'Galeri Buku';
+$lang['add_book_title'] = 'Tambah Buku';
+$lang['edit_book_title'] = 'Edit Buku';
+$lang['delete_book_title'] = 'Delete Buku';
+$lang['auto_catalog_title'] = 'Katalog Otomatis';
 $lang['isbn_search_title'] = 'ISBN Search';
 $lang['isbn_search_label'] = 'ISBN Number';
 $lang['close_label'] = 'Close';

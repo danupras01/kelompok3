@@ -120,42 +120,42 @@ $lang['books_custom_fields'] = "Books - Custom Fields";
 
 
 //Menu
-$lang['menu_home'] = "Home";
-$lang['menu_book_title'] = "Books";
-$lang['menu_book_list'] = "List";
-$lang['menu_add_book'] = "Add Book";
-$lang['menu_authors'] = "Authors";
-$lang['menu_categories'] = "Categories";
+$lang['menu_home'] = "Dashboard";
+$lang['menu_book_title'] = "Buku";
+$lang['menu_book_list'] = "Daftar Buku";
+$lang['menu_add_book'] = "Tambah Buku";
+$lang['menu_authors'] = "Penulis";
+$lang['menu_categories'] = "Kategori";
 $lang['menu_importbooks'] = "Import CSV";
 $lang['menu_labelprint'] = "Label/Barcode Print";
 
-$lang['menu_circulation'] = "Circulation";
-$lang['menu_issue_book'] = "Issue Book(s)";
-$lang['menu_return_book'] = "Return Book(s)";
-$lang['menu_borrowed_books'] = "Borrowed Books";
-$lang['menu_lost_books'] = "Lost Books";
-$lang['menu_returned_book'] = "Returned Book";
+$lang['menu_circulation'] = "Sirkulasi";
+$lang['menu_issue_book'] = "Edisi Buku (s)";
+$lang['menu_return_book'] = "Pengembalian Buku (s)";
+$lang['menu_borrowed_books'] = "Buku yang dipinjam";
+$lang['menu_lost_books'] = "Buku Hilang";
+$lang['menu_returned_book'] = "Buku yang dikembalikan";
 
-$lang['menu_delated_title'] = "Notify Delayed Members";
-$lang['menu_notify_delayed'] = "Notify";
+$lang['menu_delated_title'] = "Beritahu Anggota yang Tertunda";
+$lang['menu_notify_delayed'] = "Memberitahukan";
 $lang['menu_send_templates'] = "Email/SMS Templates";
 
-$lang['menu_admin_panel'] = "Admin Panel";
+$lang['menu_admin_panel'] = "Admin";
 $lang['menu_admin_users'] = "Users";
-$lang['menu_create_users'] = "Create User";
-$lang['menu_member_types'] = "Member Type";
-$lang['menu_occupations'] = "Occupations";
+$lang['menu_create_users'] = "Buat User";
+$lang['menu_member_types'] = "Jenis Anggota";
+$lang['menu_occupations'] = "Pekerjaan";
 
 $lang['menu_settings_title'] = "Settings";
 $lang['menu_settings'] = "Settings";
 $lang['menu_db_version'] = "Database Versions";
 $lang['menu_smsconfig'] = "SMS Config";
 
-$lang['menu_mybooks_title'] = "My Books";
-$lang['menu_mybooks'] = "My Books";
-$lang['menu_circulation_history'] = "Circulation History";
-$lang['menu_reports_title'] = "Reports";
-$lang['menu_qinventory'] = "Quick Inventory";
+$lang['menu_mybooks_title'] = "Galeri Buku";
+$lang['menu_mybooks'] = "Galeri Buku";
+$lang['menu_circulation_history'] = "Sirkulasi History";
+$lang['menu_reports_title'] = "Laporan";
+$lang['menu_qinventory'] = "Persediaan Cepat";
 
 
 //NEW
