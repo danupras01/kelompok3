@@ -46,6 +46,10 @@ $config['lms_config'] = array(
 			'name'		=> 'Contact',
 			'url'		=> 'contact',
 		),
+		'login' => array(
+			'name'		=> 'Login',
+			'url'		=> 'panel/login',
+		),
 	),
 
 	
