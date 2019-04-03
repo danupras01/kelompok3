@@ -62,7 +62,8 @@ class Login extends MY_Controller {
 				'id'   => 'password',
 				'type' => 'password',
 			);
-			$this->render('login', '', TRUE);
+			$this->load->view('panel/login', $this->data);
+			// $this->render('login', '', TRUE);
 		}
 	}
 	
