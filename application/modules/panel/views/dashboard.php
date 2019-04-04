@@ -13,7 +13,7 @@
                   <!-- <i class="ion ion-bag"></i> -->
                   <img src="<?= base_url(); ?>assets/images/library_icon.png" width="80px">
                 </div>
-                <a href="Galeri Buku" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                <a href="books" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
               </div>
             </div><!-- ./col -->
              

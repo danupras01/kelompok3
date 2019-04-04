@@ -12,7 +12,7 @@
 //Books
 
 $lang['book_not_exist'] = 'Book don\'t exist';
-$lang['book_listing_label'] = 'Galeri Buku';
+$lang['book_listing_label'] = 'Penulis';
 $lang['add_book_title'] = 'Tambah Buku';
 $lang['edit_book_title'] = 'Edit Buku';
 $lang['delete_book_title'] = 'Delete Buku';
@@ -47,16 +47,16 @@ $lang['yes_title'] = 'Yes';
 $lang['no_title'] = 'No';
 
 //Add Books
-$lang['add_book_type_title'] = 'Book Type';
+$lang['add_book_type_title'] = 'Tipe Buku';
 $lang['add_isbn_label'] = 'ISBN';
-$lang['add_book_label'] = 'Book Name';
-$lang['add_author_label'] = 'Authors';
-$lang['add_category_label'] = 'Categories';
-$lang['add_image_label'] = 'Cover Image';
+$lang['add_book_label'] = 'Nama Buku';
+$lang['add_author_label'] = 'Penulis';
+$lang['add_category_label'] = 'Katagori';
+$lang['add_image_label'] = 'Cover Gambar';
 $lang['add_isbn_13_label'] = 'ISBN 13';
-$lang['add_qty_label'] = 'Book Copies';
-$lang['add_publisher_label'] = 'Publisher Name';
-$lang['add_price_label'] = 'Price';
+$lang['add_qty_label'] = 'Kopi Buku';
+$lang['add_publisher_label'] = 'Nama Publikasi';
+$lang['add_price_label'] = 'Harga';
 $lang['add_cp_year_label'] = 'Copyright Year';
 $lang['add_rd_label'] = 'Date Recieved';
 $lang['add_desc_label'] = 'Description';
@@ -65,15 +65,15 @@ $lang['add_digital_file_label'] = 'Digital File';
 //Edit Books
 $lang['edit_book_type_title'] = 'Book Type';
 $lang['edit_isbn_label'] = 'ISBN';
-$lang['edit_book_label'] = 'Book Name';
-$lang['edit_author_label'] = 'Authors';
-$lang['edit_category_label'] = 'Categories';
-$lang['edit_image_label'] = 'Cover Image';
+$lang['edit_book_label'] = 'Nama Buku';
+$lang['edit_author_label'] = 'Penulis';
+$lang['edit_category_label'] = 'Katagori';
+$lang['edit_image_label'] = 'Cover Gambar';
 $lang['edit_digital_file_label'] = 'Digital File';
 $lang['edit_isbn_13_label'] = 'ISBN 13';
-$lang['edit_qty_label'] = 'Book Copies';
-$lang['edit_publisher_label'] = 'Publisher Name';
-$lang['edit_price_label'] = 'Price';
+$lang['edit_qty_label'] = 'Kopi Buku';
+$lang['edit_publisher_label'] = 'Nama Publikasi';
+$lang['edit_price_label'] = 'Harga';
 $lang['edit_cp_year_label'] = 'Copyright Year';
 $lang['edit_rd_label'] = 'Date Recieved';
 $lang['edit_desc_label'] = 'Description';
@@ -85,19 +85,19 @@ $lang['select_author_label'] = 'Select Author';
 
 
 // Categories
-$lang['categories_title'] = 'Categories';
-$lang['categories_name_label'] = 'Category Name';
-$lang['edit_category_title'] = 'Edit Category';
-$lang['add_category_title'] = 'Add Category';
+$lang['categories_title'] = 'Katagori';
+$lang['categories_name_label'] = 'Nama Katagori';
+$lang['edit_category_title'] = 'Edit Katagori';
+$lang['add_category_title'] = 'Tambah Katagori';
 
 
 
 //Authors
-$lang['authors_title'] = 'Authors';
-$lang['authors_name_label'] = 'Author Name';
+$lang['authors_title'] = 'Penulis';
+$lang['authors_name_label'] = 'Nama Penulis';
 $lang['actions_label'] = 'Actions';
-$lang['edit_authors_title'] = 'Edit Authors';
-$lang['add_authors_title'] = 'Add Author';
+$lang['edit_authors_title'] = 'Edit Penulis';
+$lang['add_authors_title'] = 'Tambah Penulis';
 $lang['error_sarcast'] = 'You are a Kid Boy!!!';
 
 

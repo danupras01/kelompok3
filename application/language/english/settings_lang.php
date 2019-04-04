@@ -151,8 +151,8 @@ $lang['menu_settings'] = "Settings";
 $lang['menu_db_version'] = "Database Versions";
 $lang['menu_smsconfig'] = "SMS Config";
 
-$lang['menu_mybooks_title'] = "Galeri Buku";
-$lang['menu_mybooks'] = "Galeri Buku";
+$lang['menu_mybooks_title'] = "Daftar Buku";
+$lang['menu_mybooks'] = "Daftar Buku";
 $lang['menu_circulation_history'] = "Sirkulasi History";
 $lang['menu_reports_title'] = "Laporan";
 $lang['menu_qinventory'] = "Persediaan Cepat";
