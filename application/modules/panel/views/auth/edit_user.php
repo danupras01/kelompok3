@@ -27,11 +27,55 @@
             <?php echo form_input($last_name, '', 'class="form-control"');?>
       </p>
 
-      <p>
-            <?php echo lang('edit_user_company_label', 'company');?> <br />
-            <?php echo form_input($company, '', 'class="form-control"');?>
-      </p>
+      <!-- tambahan -->
 
+                    <p>
+                          <?php echo lang('create_user_pangkat_label', 'pangkat');?> <br />
+                          <?php echo form_input($pangkat, '', 'class="form-control"');?>
+                    </p>
+
+                    <p>
+                          <?php echo lang('create_user_korps_label', 'korps');?> <br />
+                          <?php echo form_input($korps, '', 'class="form-control"');?>
+                    </p>
+
+                    <p>
+                          <?php echo lang('create_user_nrp_label', 'nrp');?> <br />
+                          <?php echo form_input($nrp, '', 'class="form-control"');?>
+                    </p>
+
+                    <p>
+                          <?php echo lang('create_user_jabatan_label', 'jabatan');?> <br />
+                          <?php echo form_input($jabatan, '', 'class="form-control"');?>
+                    </p>
+
+                    <p>
+                          <?php echo lang('create_user_satuan_label', 'satuan');?> <br />
+                          <?php echo form_input($satuan, '', 'class="form-control"');?>
+                    </p>
+
+                    <p>
+                          <?php echo lang('create_user_kesatuan_label', 'kesatuan');?> <br />
+                          <?php echo form_input($kesatuan, '', 'class="form-control"');?>
+                    </p>
+
+                    <div class="form-group">
+                      <label for="matra"><?php echo lang('user_matra_label') ?></label>
+                      <select class="form-control" id="matra" name="natra" required="required">
+                        <option value="darat"><?php echo lang('matra_darat') ?></option>
+                        <option value="laut"><?php echo lang('matra_laut') ?></option>
+                        <option value="udara"><?php echo lang('matra_udara') ?></option>
+                      </select>
+
+                     </div>
+
+                     <!--  tutup tambahan -->
+
+      <!-- <p>
+            <?php //echo lang('edit_user_company_label', 'company');?> <br />
+            <?php //echo form_input($company, '', 'class="form-control"');?>
+      </p>
+ -->
      
 
       <p>

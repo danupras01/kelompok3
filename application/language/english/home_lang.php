@@ -18,21 +18,21 @@ $lang['return_book_label'] = 'Return';
 $lang['issue_book_label'] = 'Issue';
 $lang['book_label'] = 'Book';
 
-$lang['today_dues'] = 'Jatuh Tempo Hari Ini';
-$lang['tommorow_dues'] = 'Jatuh Tempo Besok';
+$lang['today_dues'] = 'Today Dues';
+$lang['tommorow_dues'] = 'Tomorrow Dues';
 
-$lang['books_name_label'] = 'Nama Buku';
-$lang['borrower_name_label'] = 'Nama Peminjam';
-$lang['date_borrow_label'] = 'Tanggal Pinjaman';
-$lang['contact_label'] = 'Kontak';
-$lang['no_dues'] = 'Tidak Ada Jatuh Tempo Hari Ini';
-$lang['no_dues_tommorow'] = 'Tidak Ada Jatuh Tempo Besok';
-$lang['most_issue'] = 'Buku yang paling banyak dipinjam';
+$lang['books_name_label'] = 'Book Name';
+$lang['borrower_name_label'] = 'Borrower Name';
+$lang['date_borrow_label'] = 'Date Borrow';
+$lang['contact_label'] = 'Contact';
+$lang['no_dues'] = 'No Dues for Today';
+$lang['no_dues_tommorow'] = 'No Dues for Tomorrow';
+$lang['most_issue'] = 'Most Issued Books';
 
 $lang['lost_books_label'] = 'Lost Books';
 $lang['pending_books_label'] = 'Books Pending';
 $lang['ret_books_label'] = 'Books Returned';
-$lang['books_issued_till_date'] = 'Buku yang Diterbitkan hingga Tanggal';
+$lang['books_issued_till_date'] = 'Books Issued till Date';
 $lang['due_not_returned_books_label'] = 'Due But Not Returned Books';
 $lang['view_label'] = 'View';
 
