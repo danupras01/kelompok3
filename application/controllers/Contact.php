@@ -8,7 +8,8 @@ class Contact extends MY_Controller {
 
 	public function index()
 	{
-		$this->render('contact');
+		//$this->render('contact');
+		$this->load->view('hubungi');
 	}
 
 	
