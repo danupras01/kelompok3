@@ -388,6 +388,20 @@ class Books extends Admin_Controller {
                         $data['image'] = $photo;
                         $config = NULL;
 
+                        $this->load->library('image_lib');
+                        $config['image_library'] = 'gd2';
+                        $config['source_image'] = $this->upload_path.'/'.$photo;
+                        $config['new_image'] = $this->upload_path.'/'.$photo;
+                        $config['create_thumb'] = FALSE;
+                        $config['maintain_ratio'] = FALSE;
+                        $config['width']         = 270;
+                        $config['height']       = 351;
+
+                        $this->image_lib->initialize($config);
+                        //$this->image_lib->crop();
+
+                        $this->image_lib->resize();
+
                     }
                     
                 }
@@ -412,6 +426,20 @@ class Books extends Admin_Controller {
                     $data['digital_file'] = $digital_file;
                     
                     $config = NULL;
+
+                    $this->load->library('image_lib');
+                    $config['image_library'] = 'gd2';
+                    $config['source_image'] = $this->digital_upload_path.'/'.$digital_file;
+                    $config['new_image'] = $this->digital_upload_path.'/'.$digital_file;
+                    $config['create_thumb'] = FALSE;
+                    $config['maintain_ratio'] = FALSE;
+                    $config['width']         = 270;
+                    $config['height']       = 351;
+
+                    $this->image_lib->initialize($config);
+                        //$this->image_lib->crop();
+
+                    $this->image_lib->resize();
                 }
             }
             if ($_POST['category_id']) {
@@ -537,6 +565,20 @@ class Books extends Admin_Controller {
                         $photo = $this->upload->file_name;
                         $data['image'] = $photo;
                         $config = NULL;
+
+                        $this->load->library('image_lib');
+                        $config['image_library'] = 'gd2';
+                        $config['source_image'] = $this->digital_upload_path.'/'.$digital_file;
+                        $config['new_image'] = $this->digital_upload_path.'/'.$digital_file;
+                        $config['create_thumb'] = FALSE;
+                        $config['maintain_ratio'] = FALSE;
+                        $config['width']         = 270;
+                        $config['height']       = 351;
+
+                        $this->image_lib->initialize($config);
+                            //$this->image_lib->crop();
+
+                        $this->image_lib->resize();
                     }
                     
                 }
@@ -560,6 +602,20 @@ class Books extends Admin_Controller {
                     $data['digital_file'] = $digital_file;
                     
                     $config = NULL;
+
+                    $this->load->library('image_lib');
+                    $config['image_library'] = 'gd2';
+                    $config['source_image'] = $this->digital_upload_path.'/'.$digital_file;
+                    $config['new_image'] = $this->digital_upload_path.'/'.$digital_file;
+                    $config['create_thumb'] = FALSE;
+                    $config['maintain_ratio'] = FALSE;
+                    $config['width']         = 270;
+                    $config['height']       = 351;
+
+                    $this->image_lib->initialize($config);
+                        //$this->image_lib->crop();
+
+                    $this->image_lib->resize();
                 }
             }
             if ($_POST['category_id']) {
