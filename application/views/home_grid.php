@@ -214,12 +214,12 @@
 				                        <?php endforeach; ?>
 				                    <?php endif; ?>
         						</ul>
-        					</aside>
+        					</aside> 
         					<aside class="wedget__categories sidebar--banner">
-								<img src="<?php echo base_url().'assets/home/images/others/banner_left.jpg'?>" alt="banner images">
+								<img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $books[0]->image; ?>" alt="banner images">
 								<div class="text">
-									<h2>new products</h2>
-									<h6>save up to <br> <strong>40%</strong>off</h6>
+									<h2>Buku Baru</h2>
+									<h6><?php echo $books[0]->book_title ?><br> <strong></strong></h6>
 								</div>
         					</aside>
         				</div>
