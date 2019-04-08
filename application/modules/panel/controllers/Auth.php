@@ -63,7 +63,7 @@ class Auth extends Admin_Controller {
 
 		// redirect them to the login page
 		$this->session->set_flashdata('message', '<div class="alert alert-info" role="alert">You are now logged out!</div>');
-		redirect('panel/', 'refresh');
+		redirect('home/', 'refresh');
 	}
 
 	// change password

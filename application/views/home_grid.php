@@ -290,7 +290,7 @@
 								<div class="footer__content">
 									<ul class="mainmenu d-flex justify-content-center">
 										<li><a href="<?php echo base_url()?>">Home</a></li>
-										<li><a href="index.html">Contact</a></li>
+										<li><a href="<?php echo base_url().'contact'?>">Contact</a></li>
 									</ul>
 								</div>
 							</div>
