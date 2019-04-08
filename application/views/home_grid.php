@@ -169,7 +169,7 @@
         						<ul>
 			        			<?php if ($categories): ?>
 			                        <?php foreach ($categories as $category): ?>
-			                            <li><a href="<?= base_url(); ?>home/search/?category_id=<?= $category->id; ?>"><?= $category->category_name ?><span>(3)</span></a></li>
+			                            <li><a href="<?= base_url(); ?>home/search/?category_id=<?= $category->id; ?>"><?= $category->category_name ?><span>(<?php echo count($this->home_model->count_category($category->id))?>)</span></a></li>
 			                        <?php endforeach; ?>
 			                    <?php endif; ?>
 			                	</ul>

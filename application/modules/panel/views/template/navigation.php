@@ -1,4 +1,5 @@
 <div class="wrapper">
+
   <header class="main-header">
     <!-- Logo -->
     <a href="<?= base_url(); ?>panel" class="logo">
@@ -17,7 +18,10 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-
+              <a class="btn tip" title="<?= lang('language') ?>" data-placement="bottom" data-toggle="dropdown"
+                 href="#">
+                  <img src="<?= base_url('assets/images/langs/' . $settings->language . '.png'); ?>" alt="">
+              </a>
               <ul class="dropdown-menu pull-right">
                   <?php $scanned_lang_dir = array_map(function ($path) {
                       return basename($path);

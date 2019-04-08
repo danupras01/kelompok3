@@ -98,6 +98,20 @@ Class Home_model extends CI_Model
         return false;
     }
 
+    function count_category($id){
+
+        $data = array();
+        $this->db->select();
+        $this->db->from('book_categories');
+        $this->db->where('book_categories.category_id', $id);
+        $data = $this->db->get();
+        
+
+        return $data->result();
+
+       
+    }
+
 }
 
 ?>
