@@ -125,12 +125,60 @@
         </div>
         <!-- End Bradcaump area -->
         <!-- Start Shop Page -->
-        <div class="page-shop-sidebar left--sidebar bg--white section-padding--lg">
+        <div class="maincontent bg--white pt--80 pb--55">
         	<div class="container">
         		<div class="row">
-        			<div class="col-lg-3 col-12 order-2 order-lg-1 md-mt-40 sm-mt-40">
+        			<div class="col-lg-9 col-12">
+        				<div class="wn__single__product">
+        					<div class="row">
+        						<div class="col-lg-6 col-12">
+        							<div class="wn__fotorama__wrapper">
+	        							<div class="fotorama wn__fotorama__action" data-nav="thumbs">
+		        							  <a href="1.jpg"><img src="images/product/1.jpg" alt=""></a>
+		        							  <a href="2.jpg"><img src="images/product/2.jpg" alt=""></a>
+		        							  <a href="3.jpg"><img src="images/product/3.jpg" alt=""></a>
+		        							  <a href="4.jpg"><img src="images/product/4.jpg" alt=""></a>
+		        							  <a href="5.jpg"><img src="images/product/5.jpg" alt=""></a>
+		        							  <a href="6.jpg"><img src="images/product/6.jpg" alt=""></a>
+		        							  <a href="7.jpg"><img src="images/product/7.jpg" alt=""></a>
+		        							  <a href="8.jpg"><img src="images/product/8.jpg" alt=""></a>
+	        							</div>
+        							</div>
+        						</div>
+        						<div class="col-lg-6 col-12">
+        							<div class="product__info__main">
+        								<h1><?php echo $books->book_title;?></h1>
+										<div class="product__overview">
+        									<p>Jumlah Buku : <?php echo $books->book_copies;?></p>
+        									<p>Penerbit : <?php echo $books->book_pub;?></p>
+        									<p>Digital File : <?php echo $books->digital_file;?></p>
+        									<p>Penulis : <?php echo $books->author;?></p>
+        									<p>Copyright : <?php echo $books->copyright_year;?></p>
+        									<p>Jumlah Halaman :</p>
+        									<p>ISBN : </p>
+        								</div>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        				<div class="product__info__detailed">
+							<div class="pro_details_nav nav justify-content-start" role="tablist">
+	                            <a class="nav-item nav-link active" data-toggle="tab" href="#nav-details" role="tab">Details</a>
+	                        </div>
+	                        <div class="tab__container">
+	                        	<!-- Start Single Tab Content -->
+	                        	<div class="pro__tab_label tab-pane fade show active" id="nav-details" role="tabpanel">
+									<div class="description__attribute">
+										<p><?php echo $books->description;?></p>
+									</div>
+	                        	</div>
+	                        	<!-- End Single Tab Content -->
+	                        </div>
+        				</div>
+        			</div>
+        			<div class="col-lg-3 col-12 md-mt-40 sm-mt-40">
         				<div class="shop__sidebar">
-        					<aside class="wedget__categories poroduct--cat">
+        					 <aside class="wedget__categories poroduct--cat">
         						<h3 class="wedget__title">Pencarian</h3>
 								<form action="<?= base_url();?>home/search" method="get">
 									
@@ -163,7 +211,6 @@
 			        			
 								</form>
         					</aside>
-
         					<aside class="wedget__categories poroduct--cat">
         						<h3 class="wedget__title"><?= lang('menu_categories'); ?></h3>
         						<ul>
@@ -185,26 +232,7 @@
 				                    <?php endif; ?>
 				                </select>
         					</aside>
-<!--         					<aside class="wedget__categories pro--range">
-        						<h3 class="wedget__title">Filter by price</h3>
-        						<div class="content-shopby">
-        						    <div class="price_filter s-filter clear">
-        						        <form action="#" method="GET">
-        						            <div id="slider-range"></div>
-        						            <div class="slider__range--output">
-        						                <div class="price__output--wrap">
-        						                    <div class="price--output">
-        						                        <span>Price :</span><input type="text" id="amount" readonly="">
-        						                    </div>
-        						                    <div class="price--filter">
-        						                        <a href="#">Filter</a>
-        						                    </div>
-        						                </div>
-        						            </div>
-        						        </form>
-        						    </div>
-        						</div>
-        					</aside> -->
+
         					<aside class="wedget__categories poroduct--tag">
         						<h3 class="wedget__title">Tags <?= lang('menu_categories'); ?></h3>
         						<ul>
@@ -215,65 +243,12 @@
 				                    <?php endif; ?>
         						</ul>
         					</aside> 
-        					<aside class="wedget__categories sidebar--banner">
-								<img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $books[0]->image; ?>" alt="banner images">
-								<div class="text">
-									<h2>Buku Baru</h2>
-									<h6><?php echo $books[0]->book_title ?><br> <strong></strong></h6>
-								</div>
-
-        					</aside>
-        				</div>
-        			</div>
-        			<div class="col-lg-9 col-12 order-1 order-lg-2">
-        				<div class="row">
-        				</div>
-        				<div class="tab__container">
-	        				<div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
-	        					<div class="row">
-                       			<?php foreach($books as $book): ?>
-		                           	<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
-			        					<div class="product__thumb">
-											<a class="first__img" href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="product image"></a>
-											<a class="second__img animation1" href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="<?= ($book->book_title); ?>"></a>
-										</div>
-										<div class="product__content content--center">
-											<h4><a href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><?= $book->book_title ?></a></h4>
-											<ul class="prize d-flex">
-												<li>&nbsp;</li>
-												<li class="old_prize"></li>
-											</ul>
-											<div class="action">
-												<div class="actions_inner">
-													<ul class="add_to_links">
-													<?php echo anchor('home/rincian_buku/'.$book->id, $book->book_title, 'title="Detail"'); ?>
-													</ul>
-												</div>
-											</div>
-<!-- 											<div class="product__hover--content">
-												<ul class="rating d-flex">
-													<li class="on"><i class="fa fa-star-o"></i></li>
-													<li class="on"><i class="fa fa-star-o"></i></li>
-													<li class="on"><i class="fa fa-star-o"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-													<li><i class="fa fa-star-o"></i></li>
-												</ul>
-											</div> -->
-										</div>
-		        					</div>
-									<?php endforeach; ?>
-
-	        					</div>
-	        					<ul class="wn__pagination">
-	        						<?php echo $links; ?>
-	        					</ul>
-	        				</div>
         				</div>
         			</div>
         		</div>
         	</div>
         </div>
-        <!-- End Shop Page -->
+        
 		<!-- Footer Area -->
 		<footer id="wn__footer" class="footer__area bg__cat--8 brown--color">
 			<div class="footer-static-top">

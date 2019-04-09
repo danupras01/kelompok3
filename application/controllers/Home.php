@@ -156,5 +156,16 @@ class Home extends MY_Controller {
         $this->load->view('home_grid',$data);
         
     }
+
+    function rincian_buku($id){
+
+      $data["books"] = $this->home_model->getBookByID($id);  
+      $data["categories"] = $this->home_model->getAllCategories();
+      $data["authors"] = $this->home_model->getAllAuthors();
+      $data["categories"] = $this->home_model->getAllCategories();
+
+      $this->load->view('rincian_buku',$data);
+
+    }
 	
 }
