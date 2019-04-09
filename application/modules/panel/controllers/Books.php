@@ -568,8 +568,8 @@ class Books extends Admin_Controller {
 
                         $this->load->library('image_lib');
                         $config['image_library'] = 'gd2';
-                        $config['source_image'] = $this->upload_path.'/'.$digital_file;
-                        $config['new_image'] = $this->upload_path.'/'.$digital_file;
+                        $config['source_image'] = $this->upload_path.'/'.$photo;
+                        $config['new_image'] = $this->upload_path.'/'.$photo;
                         $config['create_thumb'] = FALSE;
                         $config['maintain_ratio'] = FALSE;
                         $config['width']         = 270;
