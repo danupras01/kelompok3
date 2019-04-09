@@ -218,15 +218,10 @@
         					<aside class="wedget__categories sidebar--banner">
 								<img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $books[0]->image; ?>" alt="banner images">
 								<div class="text">
-<<<<<<< HEAD
-									<!-- <h2>new products</h2>
-									<h6>save up to <br> <strong>40%</strong>off</h6>
- -->								</div>
-=======
 									<h2>Buku Baru</h2>
 									<h6><?php echo $books[0]->book_title ?><br> <strong></strong></h6>
 								</div>
->>>>>>> 348bb9938f9bce075a1061da975c09f09d5f4aff
+
         					</aside>
         				</div>
         			</div>
