@@ -82,7 +82,7 @@
                   <a href="<?= base_url();?>panel/auth/edit_user/<?= $user->id ?>" class="btn btn-default btn-flat">Edit Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="<?php echo base_url('panel/auth/logout'); ?>" class="btn btn-default btn-flat">Sign out</a>
+                  <a href="<?php echo base_url('home'); ?>" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>

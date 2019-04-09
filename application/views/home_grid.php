@@ -214,13 +214,19 @@
 				                        <?php endforeach; ?>
 				                    <?php endif; ?>
         						</ul>
-        					</aside>
+        					</aside> 
         					<aside class="wedget__categories sidebar--banner">
-								<img src="<?php echo base_url().'assets/home/images/others/banner_left.jpg'?>" alt="banner images">
+								<img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $books[0]->image; ?>" alt="banner images">
 								<div class="text">
-									<h2>new products</h2>
+<<<<<<< HEAD
+									<!-- <h2>new products</h2>
 									<h6>save up to <br> <strong>40%</strong>off</h6>
+ -->								</div>
+=======
+									<h2>Buku Baru</h2>
+									<h6><?php echo $books[0]->book_title ?><br> <strong></strong></h6>
 								</div>
+>>>>>>> 348bb9938f9bce075a1061da975c09f09d5f4aff
         					</aside>
         				</div>
         			</div>
@@ -290,7 +296,7 @@
 								<div class="footer__content">
 									<ul class="mainmenu d-flex justify-content-center">
 										<li><a href="<?php echo base_url()?>">Home</a></li>
-										<li><a href="index.html">Contact</a></li>
+										<li><a href="<?php echo base_url().'contact'?>">Contact</a></li>
 									</ul>
 								</div>
 							</div>

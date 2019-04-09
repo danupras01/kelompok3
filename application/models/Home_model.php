@@ -35,6 +35,7 @@ Class Home_model extends CI_Model
         $this->db->select('*, book_copies - (SELECT Count(borrowdetails.borrow_id) FROM  borrowdetails WHERE books.id = borrowdetails.book_id AND borrow_status = "lost") as total_quantity, book_copies - (SELECT Count(borrowdetails.borrow_id) FROM borrowdetails WHERE books.id = borrowdetails.book_id AND (borrow_status = "pending" OR borrow_status = "lost")) as available');
         $this->db->join('book_categories', 'books.id=book_categories.book_id', 'left');
         $this->db->join('book_authors', 'books.id=book_authors.book_id', 'left');
+        $this->db->order_by('books.id', 'desc');
         $this->db->group_by('books.id');
         $query = $this->db->get("books");
         
