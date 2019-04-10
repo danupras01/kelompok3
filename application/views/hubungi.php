@@ -207,9 +207,8 @@
 								<div class="ft__logo">
 									<a href="index.html">
 										<img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AD3.png"); ?>" alt="IMG"> 
-					                    <img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AL1.png"); ?>" alt="IMG">  
+					                    <img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AL6.png"); ?>" alt="IMG">  
 					                    <img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AU5.png"); ?>" alt="IMG">
-										<!-- <img src="<?php echo base_url().'assets/home/images/logo/TNI.png'?>" alt="logo"> -->
 									</a>
 									<p>Perpustakaan adalah tempat untuk memenuhi dahaga ilmu pengetahuan
 										<b>Abdurahman Wahid<b></p>

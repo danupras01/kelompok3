@@ -253,7 +253,9 @@
 							<div class="footer__widget footer__menu">
 								<div class="ft__logo">
 									<a href="index.html">
-										<img src="<?php echo base_url().'assets/home/images/logo/3.png'?>" alt="logo">
+										<img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AD6.png"); ?>" alt="IMG"> 
+					                    <img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AL6.png"); ?>" alt="IMG">  
+					                    <img src="<?php echo base_url($this->config->item("theme_admin")."/assets/home/images/logo/AU5.png"); ?>" alt="IMG">
 									</a>
 									<p>Perpustakaan adalah tempat untuk memenuhi dahaga ilmu pengetahuan
 										<b>Abdurahman Wahid<b></p>
