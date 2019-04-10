@@ -604,7 +604,8 @@ class Auth extends Admin_Controller {
 		$this->form_validation->set_rules('first_name', $this->lang->line('edit_user_validation_fname_label'), 'required');
 		$this->form_validation->set_rules('last_name', $this->lang->line('edit_user_validation_lname_label'), 'required');
 		$this->form_validation->set_rules('phone', $this->lang->line('edit_user_validation_phone_label'), 'required');
-		$this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'required');
+		// $this->form_validation->set_rules('company', $this->lang->line('edit_user_validation_company_label'), 'required');
+		
 
 		if (isset($_POST) && !empty($_POST))
 		{
@@ -635,7 +636,7 @@ class Auth extends Admin_Controller {
                 	'kesatuan' 		=> $this->input->post('kesatuan'),
                 	'matra' 		=> $this->input->post('matra'),
                 	//tutup tambahan
-					'company'    => $this->input->post('company'),
+					// 'company'    => $this->input->post('company'),
 					'phone'      => $this->input->post('phone'),
 					'gender'     		=> $this->input->post('gender'),
 					'member_unique_id' 	=> time() . getmypid(),
@@ -754,53 +755,53 @@ class Auth extends Admin_Controller {
                 'name'  => 'pangkat',
                 'id'    => 'pangkat',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('pangkat'),
+                'value' => $this->form_validation->set_value('pangkat', $user->pangkat),
             );
             $this->data['korps'] = array(
                 'name'  => 'korps',
                 'id'    => 'korps',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('korps'),
+                'value' => $this->form_validation->set_value('korps', $user->korps),
             );
             $this->data['nrp'] = array(
                 'name'  => 'nrp',
                 'id'    => 'nrp',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('nrp'),
+                'value' => $this->form_validation->set_value('nrp', $user->nrp),
             );
             $this->data['jabatan'] = array(
                 'name'  => 'jabatan',
                 'id'    => 'jabatan',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('jabatan'),
+                'value' => $this->form_validation->set_value('jabatan', $user->jabatan),
             );
             $this->data['satuan'] = array(
                 'name'  => 'satuan',
                 'id'    => 'satuan',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('satuan'),
+                'value' => $this->form_validation->set_value('satuan', $user->satuan),
             );
             $this->data['kesatuan'] = array(
                 'name'  => 'kesatuan',
                 'id'    => 'kesatuan',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('kesatuan'),
+                'value' => $this->form_validation->set_value('kesatuan', $user->kesatuan),
             );
             $this->data['matra'] = array(
                 'name'  => 'matra',
                 'id'    => 'matra',
                 'type'  => 'text',
-                'value' => $this->form_validation->set_value('matra'),
+                'value' => $this->form_validation->set_value('matra', $user->matra),
             );
             
             //tutup tambahan
 
-		$this->data['company'] = array(
-			'name'  => 'company',
-			'id'    => 'company',
-			'type'  => 'text',
-			'value' => $this->form_validation->set_value('company', $user->company),
-		);
+		// $this->data['company'] = array(
+		// 	'name'  => 'company',
+		// 	'id'    => 'company',
+		// 	'type'  => 'text',
+		// 	'value' => $this->form_validation->set_value('company', $user->company),
+		// );
 		$this->data['phone'] = array(
 			'name'  => 'phone',
 			'id'    => 'phone',

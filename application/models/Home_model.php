@@ -113,6 +113,15 @@ Class Home_model extends CI_Model
        
     }
 
+public function getBookDetByID($id)
+    {
+        $q = $this->db->query('SELECT books.*,(SELECT GROUP_CONCAT( DISTINCT authors.id ) FROM authors LEFT JOIN book_authors ON book_authors.author_id = authors.id WHERE book_authors.book_id =  `books`.id GROUP BY book_authors.book_id ) AS author_name, ( SELECT GROUP_CONCAT( DISTINCT categories.id ) FROM categories LEFT JOIN book_categories ON book_categories.category_id = categories.id WHERE book_categories.book_id =  `books`.id GROUP BY book_categories.book_id) AS category_name, book_copies - (SELECT Count(borrowdetails.borrow_id) FROM  borrowdetails WHERE books.id = borrowdetails.book_id AND borrow_status = "lost") as total_quantity, book_copies - (SELECT Count(borrowdetails.borrow_id) FROM borrowdetails WHERE books.id = borrowdetails.book_id AND borrow_status = "pending") as available FROM books WHERE books.id ='.$id);
+        if ($q->num_rows() > 0) {
+            return $q->row();
+        }
+        return FALSE;
+    }
+
 }
 
 ?>

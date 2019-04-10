@@ -62,7 +62,7 @@
 
                     <div class="form-group">
                       <label for="matra"><?php echo lang('user_matra_label') ?></label>
-                      <select class="form-control" id="matra" name="natra" required="required">
+                      <select class="form-control" id="matra" name="matra" required="required">
                         <option value="darat"><?php echo lang('matra_darat') ?></option>
                         <option value="laut"><?php echo lang('matra_laut') ?></option>
                         <option value="udara"><?php echo lang('matra_udara') ?></option>
