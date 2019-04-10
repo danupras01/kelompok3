@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['lms_config'] = array(
 
 	// Site name
-	'site_name' => 'LMS',
+	'site_name' => 'Perpus',
 
 	// Default page title prefix
 	'page_title_prefix' => '',
@@ -23,8 +23,8 @@ $config['lms_config'] = array(
 
 	// Default meta data
 	'meta_data'	=> array(
-		'author'		=> 'Usman Sher',
-		'description'	=> 'A very Flexible & Extensible Library Management System',
+		'author'		=> '',
+		'description'	=> '',
 		'keywords'		=> ''
 	),
 

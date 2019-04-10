@@ -119,7 +119,7 @@ $lang['books_custom_fields'] = "Buku - Bidang Kustom";
 
 
 //Menu
-$lang['menu_home'] = "Dasbor";
+$lang['menu_home'] = "Dashboard";
 $lang['menu_book_title'] = "Buku";
 $lang['menu_book_list'] = "Daftar Buku";
 $lang['menu_add_book'] = "Tambah Buku";
@@ -130,23 +130,23 @@ $lang['menu_labelprint'] = "Label / Cetak Barcode";
 
 
 $lang['menu_circulation'] = "Sirkulasi";
-$lang['menu_issue_book'] = "Edisi Buku";
-$lang['menu_return_book'] = "Pengembalian Buku (s)";
-$lang['menu_borrowed_books'] = "Buku yang dipinjam";
+$lang['menu_issue_book'] = "Pinjam Buku";
+$lang['menu_return_book'] = "Pengembalian Buku";
+$lang['menu_borrowed_books'] = "Buku Dipinjam";
 $lang['menu_lost_books'] = "Buku Hilang";
-$lang['menu_returned_book'] = "Buku yang dibaca";
+$lang['menu_returned_book'] = "Buku Dikembalikan";
 
-$lang['menu_delated_title'] = "Terima Anggota yang Tertunda";
-$lang['menu_notify_delayed'] = "Memberitahu";
+$lang['menu_delated_title'] = "Peringatan Anggota";
+$lang['menu_notify_delayed'] = "Peringatan";
 $lang['menu_send_templates'] = "Template Email / SMS";
 
-$lang['menu_admin_panel'] = "Admin";
+$lang['menu_admin_panel'] = "Pengaturan Pengguna";
 $lang['menu_admin_users'] = "Pengguna";
 $lang['menu_create_users'] = "Buat Pengguna";
 $lang['menu_member_types'] = "Jenis Anggota";
 $lang['menu_occupations'] = "Pekerjaan";
 
-$lang['menu_settings_title'] = "Pengaturan";
+$lang['menu_settings_title'] = "Pengaturan Lainnya";
 $lang['menu_settings'] = "Pengaturan";
 $lang['menu_db_version'] = "Versi Basis Data";
 $lang['menu_smsconfig'] = "Konfigurasi SMS";
@@ -155,13 +155,13 @@ $lang['menu_mybooks_title'] = "Daftar Buku";
 $lang['menu_mybooks'] = "Daftar Buku";
 $lang['menu_circulation_history'] = "Sirkulasi History";
 $lang['menu_reports_title'] = "Laporan";
-$lang['menu_qinventory'] = "persediaan Cepat";
+$lang['menu_qinventory'] = "Persediaan Cepat";
 
 
 //BARU
-$lang['menu_requested_books'] = "Buku yang Diminta";
-$lang['menu_add_requested_books'] = "Buku Permintaan";
-$lang['menu_list_requested_books'] = "Daftar Buku yang Diminta";
+$lang['menu_requested_books'] = "Permintaan Buku";
+$lang['menu_add_requested_books'] = "Permintaan Buku";
+$lang['menu_list_requested_books'] = "Daftar Permintaan Buku";
 $lang['email_request'] = "Buku yang Diminta - Email";
 $lang['sms_request'] = "Buku yang Diminta - SMS";
 $lang['request_title'] = "Buku yang Diminta";

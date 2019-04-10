@@ -173,7 +173,7 @@
                           endif;
                         }
                       }else{ ?>
-                        <td colspan=3 class="text-center">No DUEs for Tomorrow</td>
+                        <td colspan=3 class="text-center">Data Kosong</td>
                       <?php }
                       ?>
                 </tbody>
