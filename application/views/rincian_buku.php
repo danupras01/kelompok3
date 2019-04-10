@@ -134,14 +134,9 @@
         						<div class="col-lg-6 col-12">
         							<div class="wn__fotorama__wrapper">
 	        							<div class="fotorama wn__fotorama__action" data-nav="thumbs">
-		        							  <a href="1.jpg"><img src="images/product/1.jpg" alt=""></a>
-		        							  <a href="2.jpg"><img src="images/product/2.jpg" alt=""></a>
-		        							  <a href="3.jpg"><img src="images/product/3.jpg" alt=""></a>
-		        							  <a href="4.jpg"><img src="images/product/4.jpg" alt=""></a>
-		        							  <a href="5.jpg"><img src="images/product/5.jpg" alt=""></a>
-		        							  <a href="6.jpg"><img src="images/product/6.jpg" alt=""></a>
-		        							  <a href="7.jpg"><img src="images/product/7.jpg" alt=""></a>
-		        							  <a href="8.jpg"><img src="images/product/8.jpg" alt=""></a>
+		        							  <a href="#">
+		        							  <img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $books->image; ?>" alt="<?= ($books->book_title); ?>">
+		        							  </a>
 	        							</div>
         							</div>
         						</div>
@@ -152,10 +147,10 @@
         									<p>Jumlah Buku : <?php echo $books->book_copies;?></p>
         									<p>Penerbit : <?php echo $books->book_pub;?></p>
         									<p>Digital File : <?php echo $books->digital_file;?></p>
-        									<p>Penulis : <?php echo $books->author;?></p>
+        									<p>Penulis : <?php echo $books->author_name;?></p>
         									<p>Copyright : <?php echo $books->copyright_year;?></p>
-        									<p>Jumlah Halaman :</p>
-        									<p>ISBN : </p>
+        									<p>Jumlah Halaman : <?php echo substr($books->custom_fields,25,-2);?> </p>
+        									<p>ISBN : <?php echo $books->isbn;?> </p>
         								</div>
         							</div>
         						</div>

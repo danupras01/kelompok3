@@ -234,11 +234,11 @@
                        			<?php foreach($books as $book): ?>
 		                           	<div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
 			        					<div class="product__thumb">
-											<a class="first__img" href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="product image"></a>
-											<a class="second__img animation1" href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="<?= ($book->book_title); ?>"></a>
+											<a class="first__img" href="<?php echo base_url().'home/rincian_buku/'.$book->book_id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="product image"></a>
+											<a class="second__img animation1" href="<?php echo base_url().'home/rincian_buku/'.$book->book_id; ?>"><img src="<?= base_url(); ?>assets/uploads/book_covers/<?= $book->image; ?>" alt="<?= ($book->book_title); ?>"></a>
 										</div>
 										<div class="product__content content--center">
-											<h4><a href="<?php echo base_url().'home/rincian_buku/'.$book->id; ?>"><?= $book->book_title ?></a></h4>
+											<h4><a href="<?php echo base_url().'home/rincian_buku/'.$book->book_id; ?>"><?= $book->book_title ?></a></h4>
 											<ul class="prize d-flex">
 												<li>&nbsp;</li>
 												<li class="old_prize"></li>
@@ -246,7 +246,7 @@
 											<div class="action">
 												<div class="actions_inner">
 													<ul class="add_to_links">
-													<?php echo anchor('home/rincian_buku/'.$book->id, $book->book_title, 'title="Detail"'); ?>
+													<?php echo anchor('home/rincian_buku/'.$book->book_id, $book->book_title, 'title="Detail"'); ?>
 													</ul>
 												</div>
 											</div>
