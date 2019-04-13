@@ -50,7 +50,7 @@ $lang['short_tags'] = 'Tag Pendek';
 $lang['smtp_user'] = 'Pengguna SMTP';
 $lang['smtp_host'] = 'Host SMTP';
 $lang['smtp_port'] = 'Port SMTP';
-$lang['smtp_pass'] = 'Lulus SMTP';
+$lang['smtp_pass'] = 'Password SMTP';
 $lang['email_sent_error'] = 'Email / SMS Tidak Terkirim';
 
 $lang['lang_updated'] = 'Bahasa Berhasil Diperbarui';
