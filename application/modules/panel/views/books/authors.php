@@ -36,8 +36,8 @@
             </div>
           </div>
           
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addAuthorCSV">
-            <?= lang('import_authors_by_csv');?>
+
+          
           </button>
           <div class="modal fade" id="addAuthorCSV" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog">

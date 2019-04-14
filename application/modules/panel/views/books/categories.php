@@ -36,8 +36,8 @@
             </div>
           </div>
 
-          <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addCategoryCSV">
-            <?= lang('import_categories_by_csv');?>
+        <!--   <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#addCategoryCSV"> -->
+      
           </button>
           <div class="modal fade" id="addCategoryCSV" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
             <div class="modal-dialog">
