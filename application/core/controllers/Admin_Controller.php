@@ -28,7 +28,7 @@ class Admin_Controller extends MY_Controller {
 						lang('menu_add_book')		=> 'books/add',
 						lang('menu_authors')		=> 'books/authors',
 						lang('menu_categories')	=> 'books/categories',
-						lang('menu_importbooks')	=> 'books/import_csv',
+						// lang('menu_importbooks')	=> 'books/import_csv',
 						lang('menu_labelprint')	=> 'books/print_barcodes'
 					)
 					
