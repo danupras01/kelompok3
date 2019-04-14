@@ -42,9 +42,9 @@ $lang['export_to_pdf'] = 'Export to PDF';
 $lang['csv_format_error'] = 'CSV format is Wrong.';
 
 
-$lang['email_heading'] = 'Email/SMS Template';
-$lang['save_template_success'] = 'Email/SMS Template Successfully Saved';
-$lang['save_template_error'] = 'Error Saving Email/SMS Template';
+$lang['email_heading'] = 'Email Template';
+$lang['save_template_success'] = 'Email Template Successfully Saved';
+$lang['save_template_error'] = 'Error Saving Email Template';
 $lang['mail_message'] = 'Email Template';
 $lang['short_tags'] = 'Short Tags';
 $lang['smtp_user'] = 'SMTP User';

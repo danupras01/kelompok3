@@ -19,7 +19,7 @@ class Delayed extends Admin_Controller {
             if ($this->mSettings->issue_conf == 1) {
                 if (!($this->mSettings->issue_limit_days == 0 || $this->mSettings->issue_limit_days == -1)) {
                     $this->datatables
-                        ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date')
+                        ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date,phone')
                         ->from('borrow');
                     $this->datatables->join('users', 'borrow.member_id = users.id', 'left');
                     $this->datatables->join('borrowdetails', 'borrow.borrow_id = borrowdetails.borrow_id', 'left');
@@ -37,7 +37,7 @@ class Delayed extends Admin_Controller {
             }
             if ($this->mSettings->issue_conf == 2) {
                 $this->datatables
-                    ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date')
+                    ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date,phone')
                     ->from('borrow');
                     $this->datatables->join('users', 'borrow.member_id = users.id', 'left');
                     $this->datatables->join('borrowdetails', 'borrow.borrow_id = borrowdetails.borrow_id', 'left');
@@ -53,7 +53,7 @@ class Delayed extends Admin_Controller {
             }
         }else{
             $this->datatables
-                ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date')
+                ->select('borrow_details_id as id, book_title as title, CONCAT(first_name, " ", last_name) as name, date_borrow as date_borrow, due_date as due_date,phone')
                 ->from('borrow');
                 
             $this->datatables->join('users', 'borrow.member_id = users.id', 'left');
@@ -70,7 +70,7 @@ class Delayed extends Admin_Controller {
             echo $this->datatables->generate('json', 'ISO-8859-1');
         }
 
-        // echo $this->datatables->generate();
+         //echo $this->datatables->generate();
     }
     function index()
     {
