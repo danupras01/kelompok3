@@ -395,7 +395,7 @@ class Books extends Admin_Controller {
                         $config['create_thumb'] = FALSE;
                         $config['maintain_ratio'] = FALSE;
                         $config['width']         = 270;
-                        $config['height']       = 351;
+                        $config['height']       = 341;
 
                         $this->image_lib->initialize($config);
                         //$this->image_lib->crop();
@@ -434,7 +434,7 @@ class Books extends Admin_Controller {
                     $config['create_thumb'] = FALSE;
                     $config['maintain_ratio'] = FALSE;
                     $config['width']         = 270;
-                    $config['height']       = 351;
+                    $config['height']       = 341;
 
                     $this->image_lib->initialize($config);
                         //$this->image_lib->crop();
@@ -573,7 +573,7 @@ class Books extends Admin_Controller {
                         $config['create_thumb'] = FALSE;
                         $config['maintain_ratio'] = FALSE;
                         $config['width']         = 270;
-                        $config['height']       = 351;
+                        $config['height']       = 341;
 
                         $this->image_lib->initialize($config);
                             //$this->image_lib->crop();
@@ -610,7 +610,7 @@ class Books extends Admin_Controller {
                     $config['create_thumb'] = FALSE;
                     $config['maintain_ratio'] = FALSE;
                     $config['width']         = 270;
-                    $config['height']       = 351;
+                    $config['height']       = 341;
 
                     $this->image_lib->initialize($config);
                         //$this->image_lib->crop();
