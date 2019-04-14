@@ -78,8 +78,8 @@ class Admin_Controller extends MY_Controller {
 					'icon'		=> 'fa fa-cogs',
 					'children'  => array(
 						lang('menu_settings')				=> 'settings/index',
-						lang('menu_db_version')		=> 'settings/list_db',
-						lang('menu_smsconfig')			=> 'settings/sms',
+						// lang('menu_db_version')		=> 'settings/list_db',
+						//lang('menu_smsconfig')			=> 'settings/sms',
 					)
 					
 				),
