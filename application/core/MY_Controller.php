@@ -132,20 +132,22 @@ class MY_Controller extends MX_Controller {
     {
     	
         $this->load->library('email');
-        $config['useragent'] = "Library Management System";
+        $config['useragent'] = "Perpustakaan TNI";
         $config['protocol'] = 'smtp';
         $config['mailtype'] = "html";
-        $config['crlf'] = "\r\n";
+        $config['crlf'] = '\r\n';
         $config['charset']   = 'utf-8';
-		$config['newline']   = "\r\n";
+		$config['newline']   = '\r\n';
        
         $this->load->library('encrypt');
 
         $config['smtp_host'] = $this->mSettings->smtp_host;
         $config['smtp_user'] = $this->mSettings->smtp_user;
         $config['smtp_pass'] = ($this->mSettings->smtp_pass);
-        $config['smtp_port'] = $this->mSettings->smtp_port;
-      
+        $config['smtp_port'] = intval($this->mSettings->smtp_port);
+        $config['smtp_crypto'] = 'ssl';
+
+        
 
         $this->email->initialize($config);
 

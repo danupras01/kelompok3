@@ -2,7 +2,7 @@
   <!-- /.content-wrapper -->
   <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>Version</b> <?= $settings->version; ?>
+      <!-- <b>Version</b> <?= $settings->version; ?> -->
     </div>
     <strong>Copyright &copy; <?= date('Y',time()); ?> <?= $settings->title; ?>.</strong> All rights
     reserved.

@@ -28,7 +28,7 @@ class Admin_Controller extends MY_Controller {
 						lang('menu_add_book')		=> 'books/add',
 						lang('menu_authors')		=> 'books/authors',
 						lang('menu_categories')	=> 'books/categories',
-						lang('menu_importbooks')	=> 'books/import_csv',
+						// lang('menu_importbooks')	=> 'books/import_csv',
 						lang('menu_labelprint')	=> 'books/print_barcodes'
 					)
 					
@@ -78,8 +78,8 @@ class Admin_Controller extends MY_Controller {
 					'icon'		=> 'fa fa-cogs',
 					'children'  => array(
 						lang('menu_settings')				=> 'settings/index',
-						lang('menu_db_version')		=> 'settings/list_db',
-						lang('menu_smsconfig')			=> 'settings/sms',
+						// lang('menu_db_version')		=> 'settings/list_db',
+						//lang('menu_smsconfig')			=> 'settings/sms',
 					)
 					
 				),

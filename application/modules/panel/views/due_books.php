@@ -36,7 +36,7 @@ $(document).ready(function () {
     $(document).ready(function () {
         var oTable = $('#PRData').dataTable({
             "aaSorting": [[3, "asc"]],
-            "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "aLengthMenu": [[10, 25, 50, 100,50, -1], [10, 25, 50,50, 100, "All"]],
             "iDisplayLength": 10,
             'bProcessing': true, 'bServerSide': true,
             'sAjaxSource': '<?= site_url('panel/delayed/due_books_json/') ?>',
@@ -67,6 +67,11 @@ $(document).ready(function () {
                 "data": "date_borrow",
             },{
                 "data": "due_date",
+            },{
+                "data": "phone",
+                "render": function ( data, type, row, meta ) {
+                  return '<a href="https://api.whatsapp.com/send?phone='+data+'" target="_blank">'+data+'</a>';
+                }
             }
             ],
            
@@ -75,6 +80,7 @@ $(document).ready(function () {
     });
      
 </script>
+
     <?= form_open('panel/delayed/notify_delayed'); ?>
 
  <!-- Main content -->
@@ -101,7 +107,7 @@ $(document).ready(function () {
                     <select onchange="showCSTemplates(this);" class="form-control" name="type" required="required">
                       <option selected="selected" value="" id="Templates">Please select...</option>
                       <option value="email"><?= lang('email_label');?></option>
-                      <option value="sms"><?= lang('sms_label');?></option>
+                      
                     </select>
                   </div>
                   <div class="form-group">
@@ -141,6 +147,7 @@ $(document).ready(function () {
                   <th><?= lang('borrower_name_label'); ?></th>
                   <th><?= lang('date_borrow_label'); ?></th>
                   <th><?= lang('due_date_label'); ?></th>
+                  <th>WhatsApp</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -155,6 +162,7 @@ $(document).ready(function () {
                   <th><?= lang('borrower_name_label'); ?></th>
                   <th><?= lang('date_borrow_label'); ?></th>
                   <th><?= lang('due_date_label'); ?></th>
+                  <th>WhatsApp</th>
                 </tr>
                 </tfoot>
               </table>

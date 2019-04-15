@@ -23,9 +23,9 @@ $config['lms_config'] = array(
 
 	// Default meta data
 	'meta_data'	=> array(
-		'author'		=> 'Usman Sher',
-		'description'	=> 'A Flexible & smart Library Management System integratable with Public Library, School Library or E-Library',
-		'keywords'		=> 'lms, library, online, online library, E-Library'
+		'author'		=> '',
+		'description'	=> '',
+		'keywords'		=> ''
 	),
 
 	

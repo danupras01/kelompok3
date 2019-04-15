@@ -42,20 +42,20 @@ $lang['export_to_pdf'] = 'Ekspor ke PDF';
 $lang['csv_format_error'] = 'Format CSV salah.';
 
 
-$lang['email_heading'] = 'Template Email / SMS';
-$lang['save_template_success'] = 'Template Email / SMS Berhasil Disimpan';
-$lang['save_template_error'] = 'Kesalahan Menyimpan Template Email / SMS';
+$lang['email_heading'] = 'Template Email';
+$lang['save_template_success'] = 'Template Email Berhasil Disimpan';
+$lang['save_template_error'] = 'Kesalahan Menyimpan Template Email ';
 $lang['mail_message'] = 'Template Email';
 $lang['short_tags'] = 'Tag Pendek';
 $lang['smtp_user'] = 'Pengguna SMTP';
 $lang['smtp_host'] = 'Host SMTP';
 $lang['smtp_port'] = 'Port SMTP';
-$lang['smtp_pass'] = 'Lulus SMTP';
-$lang['email_sent_error'] = 'Email / SMS Tidak Terkirim';
+$lang['smtp_pass'] = 'Password SMTP';
+$lang['email_sent_error'] = 'Email Tidak Terkirim';
 
 $lang['lang_updated'] = 'Bahasa Berhasil Diperbarui';
 $lang['lang_not_updated'] = 'Kesalahan saat memperbarui Bahasa';
-$lang['sms_sent_success'] = 'SMS Berhasil Dikirim';
+$lang['sms_sent_success'] = '  Berhasil Dikirim';
 $lang['toggle_alignment'] = 'Toggle Alignment';
 $lang['remind_due'] = 'Ingatkan';
 
@@ -138,7 +138,7 @@ $lang['menu_returned_book'] = "Buku Dikembalikan";
 
 $lang['menu_delated_title'] = "Peringatan Anggota";
 $lang['menu_notify_delayed'] = "Peringatan";
-$lang['menu_send_templates'] = "Template Email / SMS";
+$lang['menu_send_templates'] = "Template Email ";
 
 $lang['menu_admin_panel'] = "Pengaturan Pengguna";
 $lang['menu_admin_users'] = "Pengguna";

@@ -1,7 +1,7 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 <div class="box">
     <div class="box-header">
-        <h2 class="blue"><i class="fa-fw fa fa-envelope"></i>Email/SMS Template</h2>
+        <h2 class="blue"><i class="fa-fw fa fa-envelope"></i>Email Template</h2>
     </div>
     <div class="box-content">
         <div class="row">
@@ -11,7 +11,7 @@
                           <!-- Nav tabs -->
                           <ul class="nav nav-tabs" role="tablist">
                             <li role="presentation" class="active"><a href="#email" aria-controls="email" role="tab" data-toggle="tab">Email Template</a></li>
-                            <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS Template</a></li>
+                            <!-- <li role="presentation"><a href="#sms" aria-controls="sms" role="tab" data-toggle="tab">SMS Template</a></li> -->
                           </ul>
 
                           <!-- Tab panes -->
