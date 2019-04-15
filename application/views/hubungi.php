@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Perpustakaan Puspen TNI</title>
+	<title>PERPUSTAKAAN MABES TNI</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -110,7 +110,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">Perpustakaan Puspen TNI</h2>
+                        	<h2 class="bradcaump-title">PERPUSTAKAAN MABES TNI</h2>
                         </div>
                     </div>
                 </div>
@@ -151,7 +151,7 @@
         			</div> -->
         			<div class="col-lg-8 col-12 md-mt-40 sm-mt-40">
         				<div class="wn__address"> 
-        				<h2 class="contact__title">PUSPEN MABES TNI</h2>       					
+        				<h2 class="contact__title">MABES TNI</h2>       					
         					<p><b><h4>"Tunaikan Sumpah dan tugas kewajiban sebagai prajurit Negara Republik Indonesia, yang sanggup menjamin keamanan dan keselamatan nusa dan bangsanya"</h4></b></p>
         					<b>Panglima Besar Jenderal Sudirman </p>
         					<h2 class="contact__title">Contact Form.</h2>
