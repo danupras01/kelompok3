@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>PERPUSTAKAAN MABES TNI</title>
+	<title>PERPUSTAKAAN TNI</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -117,7 +117,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="bradcaump__inner text-center">
-                        	<h2 class="bradcaump-title">PERPUSTAKAAN MABES TNI</h2>
+                        	<h2 class="bradcaump-title">PERPUSTAKAAN TNI</h2>
                         </div>
                     </div>
                 </div>
