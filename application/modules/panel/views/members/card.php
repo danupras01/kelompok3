@@ -74,7 +74,7 @@
                         <div class="card-content">
                            <svg xmlns="http://www.w3.org/2000/svg" width="353px" height="206px" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 
-                                <image xlink:href="<?= base_url() ?>assets/uploads/logos/<?= $profile->logo; ?>" x="60" y="0" height="180" width="180" /> 
+                                <image xlink:href="<?= base_url() ?>assets/uploads/logos/<?= $profile->logo; ?>" x="75" y="0" height="180" width="180" /> 
                                <!--  <text x="5"  y="75" style="font-size:18;fill:#FFF;">
                                     <?= $profile->title;?>
                                 </text> -->
