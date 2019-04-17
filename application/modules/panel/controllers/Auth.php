@@ -409,6 +409,7 @@ class Auth extends Admin_Controller {
                 'matra' 		=> $this->input->post('matra'),
                 //tutup tambahan
                 'company'  		  	=> $this->input->post('company'),
+                'email'  		  	=> $this->input->post('email'),
                 'phone'    		 	=> $this->input->post('phone'),
                 'username'  		=> $this->input->post('username'),
                 'gender'     		=> $this->input->post('gender'),
@@ -637,6 +638,7 @@ class Auth extends Admin_Controller {
                 	'matra' 		=> $this->input->post('matra'),
                 	//tutup tambahan
 					// 'company'    => $this->input->post('company'),
+					'email'      => $this->input->post('email'),
 					'phone'      => $this->input->post('phone'),
 					'gender'     		=> $this->input->post('gender'),
 					'member_unique_id' 	=> time() . getmypid(),
@@ -802,6 +804,12 @@ class Auth extends Admin_Controller {
 		// 	'type'  => 'text',
 		// 	'value' => $this->form_validation->set_value('company', $user->company),
 		// );
+        $this->data['email'] = array(
+			'name'  => 'email',
+			'id'    => 'email',
+			'type'  => 'text',
+			'value' => $this->form_validation->set_value('email', $user->email),
+		);	
 		$this->data['phone'] = array(
 			'name'  => 'phone',
 			'id'    => 'phone',

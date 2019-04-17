@@ -129,8 +129,8 @@
         var date = $('#due_date').datepicker({
             dateFormat: 'yy-mm-dd',
             showButtonPanel: true,
-            minDate: new Date(<?= date('Y'); ?>, <?= date('m') ?>, <?= date('d'); ?>),
-            maxDate: '+30Y',
+            // minDate: new Date(<?= date('Y'); ?>, <?= date('m') ?>, <?= date('d'); ?>),
+            // maxDate: '+30Y',
             inline: true
 
         });

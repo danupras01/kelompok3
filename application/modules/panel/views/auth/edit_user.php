@@ -76,7 +76,10 @@
             <?php //echo form_input($company, '', 'class="form-control"');?>
       </p>
  -->
-     
+     <p>
+            <?php echo lang('edit_user_email_label', 'email');?> <br />
+            <?php echo form_input($email, '', 'class="form-control"');?>
+      </p>
 
       <p>
             <?php echo lang('edit_user_password_label', 'password');?> <br />
