@@ -70,7 +70,7 @@
                  <div class="card">
 
                     <div class="back">
-                        <img src="<?= base_url();?>assets/card.png" alt="" class="card_img">
+                        <img src="<?= base_url();?>assets/card_back.png" alt="" class="card_img">
                         <div class="card-content">
                            <svg xmlns="http://www.w3.org/2000/svg" width="353px" height="206px" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 
