@@ -20,7 +20,7 @@
 <body id="my">
   <div class="container">
     <div class="top">
-      <h1 id="title" class="hidden"><span id="logo">Perpustakaan <span>Puspen TNI</span></span></h1>
+      <h1 id="title" class="hidden"><span id="logo">Perpustakaan <span> TNI</span></span></h1>
     </div>
       <?php 
           echo form_open('panel/login'); 

@@ -176,7 +176,7 @@
         							<i class="icon-envelope icons"></i>
         							<div class="content">
         								<span>Email address:</span>
-        								<p>ppidtni@puspen.tni.mil.id</p>
+        								<p>perpus@mabes.online</p>
         							</div>
         						</div>
 
