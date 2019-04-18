@@ -70,7 +70,7 @@ $(document).ready(function () {
             },{
                 "data": "phone",
                 "render": function ( data, type, row, meta ) {
-                  return '<a href="https://api.whatsapp.com/send?phone='+data+'" target="_blank">'+data+'</a>';
+                  return '<a href="https://wa.me/'+data+'" target="_blank">'+data+'</a>';
                 }
             }
             ],
