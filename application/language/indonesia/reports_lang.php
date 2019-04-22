@@ -20,7 +20,7 @@
 // Errors
 $lang['quick_inventory'] = 'Laporan Inventaris Cepat';
 $lang['total_books'] = 'Total Buku';
-$lang['total_books_price'] = 'Total Harga Buku';
+// $lang['total_books_price'] = 'Total Harga Buku';
 $lang['total_books_lost'] = 'Total Buku Hilang';
 $lang['total_books_borrowed'] = 'Buku yang Dipinjam';
 $lang['total_member'] = 'Total Anggota';
