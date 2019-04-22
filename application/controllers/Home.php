@@ -170,5 +170,16 @@ class Home extends MY_Controller {
       $this->load->view('rincian_buku',$data);
 
     }
+
+     public function read($id)
+    {
+        $this->load->model('home_model');
+        $book = $this->books_model->getBookByID($id);
+
+        $this->data['book'] = $book;
+        $this->mPageTitle = $book->book_title;
+
+        $this->render('read');
+    }   
 	
 }

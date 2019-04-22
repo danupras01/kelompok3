@@ -26,6 +26,151 @@
 
 	<!-- Modernizer js -->
 	<script src="<?php echo base_url().'assets/home/js/vendor/modernizr-3.5.0.min.js'?>"></script>
+
+	<script>
+ $(function()
+    {
+        $('#isbnsearchsubmit').on('click',function(e){
+            //e.preventDefault(); to stop default behaviour
+            //e.stopPropagation(); to stop bubbling
+
+            var isbn = $('#isbnnumber').val();
+            window.location.href = 'books/getBookDetails/'+isbn;
+
+            // similar behavior as clicking on a link
+
+        });
+    });
+base_url = <?php echo json_encode(base_url()); ?>;
+
+function img_hl(x) {
+    // return x == null ? '' : '<div class="text-center"><a href="'+site.base_url+'assets/uploads/' + x + '" data-toggle="lightbox"><img src="'+site.base_url+'assets/uploads/thumbs/' + x + '" alt="" style="width:30px; height:30px;" /></a></div>';
+    if (x.substring(0, 7) == 'uploads') {
+        return "<img style='width:20px; height:30px;' src=" + base_url + x +">";
+        
+    }else{
+      return "<img style='width:20px; height:30px;' src=" + base_url + 'assets/uploads/book_covers/' + x +">";
+
+    }
+
+
+}
+
+function isPdf(x) {
+  var div = document.createElement('div');
+  div.innerHTML = x // Make it a complete tag
+  var link = div.firstChild.getAttribute("href");
+  var title = div.firstChild.getAttribute("title");
+
+  if (title == null || title == '') {
+    return "Not Available";
+  }else{
+    return "<a href='"+link+"'>Read</a>";
+    
+  }
+}
+function actions(x) {
+  <?php  
+    if ( $this->ion_auth->in_group(array('webmaster', 'admin')) ){
+  ?> 
+  return x;
+  <?php }else{ ?>
+    return ""
+  <?php } ?>
+}
+function bkFormat(x) {
+    if (x != null) {
+        var d = '', pqc = x.split("___");
+        d = '<strong>' + pqc[0] + '</strong><br>';
+        d += '<strong><?= lang('publisher_label'); ?>: </strong>'+pqc[1] + '<br>';
+        d += '<strong><?= lang('author_label'); ?>: </strong>' + pqc[2] + '<br>';
+        return d;
+    } else {
+        return '';
+    }
+}
+function pqFormat(x) {
+        var d = '', pqc = x.split(",");
+
+        // for (index = 0; index < pqc.length; ++index) {
+        //     var pq = pqc[index];
+        //     var v = pq.split(",");
+        //     d += v[0] +'<br>';
+        // }
+        return x;
+    
+}
+
+    $(document).ready(function () {
+        var oTable = $('#PRData').dataTable({
+            "aaSorting": [[3, "asc"]],
+            "aLengthMenu": [[10, 25, 50, 100, -1], [10, 25, 50, 100, "All"]],
+            "iDisplayLength": 10,
+            'bProcessing': true, 'bServerSide': true,
+            'sAjaxSource': '<?= site_url('panel/books/getBooks') ?>',
+            'fnServerData': function (sSource, aoData, fnCallback) {
+                aoData.push({
+                    "name": "<?= $this->security->get_csrf_token_name() ?>",
+                    "value": "<?= $this->security->get_csrf_hash() ?>"
+                });
+                $.ajax({'dataType': 'json', 'type': 'POST', 'url': sSource, 'data': aoData, 'success': fnCallback});
+            }, 
+            // "columnDefs": [
+            //   { "width": '20%', "targets": 0 }
+            // ],
+            // "fixedColumns": true,
+            'fnRowCallback': function (nRow, aData, iDisplayIndex) {
+                var oSettings = oTable.fnSettings();
+                nRow.id = aData['id'];
+                nRow.className = "book_link";
+                //if(aData[7] > aData[9]){ nRow.className = "product_link warning"; } else { nRow.className = "product_link"; }
+                return nRow;
+            },
+            "aoColumns": [{
+                "bSearchable_": false,
+                "data": "image",
+                "mRender": img_hl,
+                "bSortable": false,
+            }, {
+                "data": "book_title",
+                "name": "book_title",
+                "mRender": bkFormat,
+
+            },{
+                "data": "category_name",
+                "name": "category_name",
+            },{
+                "data": "total_quantity",
+                "name": "total_quantity",
+
+            },{
+                "data": "available",
+                "name": "available",
+
+            }, {
+                "data": "price",
+                "name": "books.price",
+            },  
+            { 
+                "data": "read", 
+                "name": "read", 
+                "bSortable": false,
+                "mRender": isPdf,
+
+             },{ 
+                "data": "actions", 
+                "name": "actions", 
+                "bSortable": false,
+                "mRender": actions,
+
+             },
+             ],
+           
+        });
+              
+    });
+     
+</script>
 </head>
 <body >
 	<!--[if lte IE 9]>
@@ -146,7 +291,20 @@
 										<div class="product__overview">
         									<p>Jumlah Buku : <?php echo $books->book_copies;?></p>
         									<p>Penerbit : <?php echo $books->book_pub;?></p>
-        									<p>Digital File : <?php echo $books->digital_file;?></p>
+											 
+
+											 <?php
+											        if (!parse_url($book->digital_file, PHP_URL_SCHEME)) {
+											            $book->digital_file = base_url().'files/'.$book->digital_file; 
+											        }
+											        
+
+											?>
+        								
+        									
+
+        									<p>Digital File : <a href="<?php echo base_url().'files/'.$books->digital_file;?>" target="_blank"><?php echo $books->digital_file;?></a></p>
+
         									<p>Penulis : <?php echo $books->author_name;?></p>
         									<p>Copyright : <?php echo $books->copyright_year;?></p>
         									<p>Jumlah Halaman : <?php echo substr($books->custom_fields,25,-2);?> </p>
@@ -310,6 +468,88 @@
 		    $( "#scrollUp" ).remove();
 	
 		</script>
+
+		<!-- <script type="text/javascript">
+$('body').on('click', '#PRData td:not(:first-child, :last-child)', function() {
+    var num = $(this).closest('tr').attr('id');
+    find(num);
+    $('#view_book').modal('show');
+
+});
+
+function find(num) {
+        jQuery.ajax({
+            type: "POST",
+            url: base_url + "panel/books/view",
+            data: "id=" + escape(num),
+            cache: false,
+            dataType: "json",
+            success: function (data) {
+                if (typeof data.book_title === 'undefined') {
+                    $('#view_book').modal('hide');
+                } else {
+                    jQuery('#title_client_view').html('Book: '+data.book_title);
+                    jQuery( ".flatb.add" ).data( "name", data.book_title);
+                    jQuery( ".flatb.add" ).data( "id_name", data.id);
+                    jQuery( ".flatb.lista" ).data( "name", data.book_title);
+
+                    jQuery('#v_book_title').html(data.book_title);
+                    jQuery('#v_book_copies').html(data.total_quantity);
+                    jQuery('#v_available').html(data.available);
+                    jQuery('#v_book_publisher').html(data.book_pub);
+
+                    if (data.image !== null && data.image !== '') {
+                      document.getElementById("v_image").src="<?= base_url(); ?>assets/uploads/book_covers/"+data.image;
+                    }else{
+                      document.getElementById("v_image").src="<?= base_url(); ?>assets/uploads/book_covers/no_image.png";
+                    }
+
+
+                    if (data.digital_file !== null && data.digital_file !== '') {
+                      jQuery('#v_digital_file').html('<a href="<?= base_url();?>panel/books/read/'+data.id+'" target="_black">Read</a>');
+                    }else{
+                      jQuery('#v_digital_file').html('Not Available');
+                    }
+
+                    jQuery('#v_isbn').html(data.isbn);
+                    jQuery('#v_isbn13').html(data.isbn_13);
+                    jQuery('#v_price').html(data.price);
+                    jQuery('#v_copyright_year').html(data.copyright_year);
+                    jQuery('#v_date_recieve').html(data.date_receive);
+                    jQuery('#v_date_added').html(data.date_added);
+                    jQuery('#v_description').html(data.description);
+                    jQuery('#v_authors').html(data.author_name);
+                    jQuery('#v_categories').html(data.category_name);
+                    
+
+                    jQuery('.show_custom').html('');
+
+                    var IS_JSON = true;
+                    try
+                    {
+                        var json = $.parseJSON(data.custom_fields);
+                    }
+                    catch(err)
+                    {
+                        IS_JSON = false;
+                    }                
+
+                    if(IS_JSON) 
+                    {
+
+                        $.each(json, function(id_field, val_field) {
+                            jQuery('#v'+id_field).html(val_field);
+                        });
+                    }
+                   
+                    var string = "<button data-dismiss=\"modal\" class=\"btn btn-default\" type=\"button\"><i class=\"fa fa-reply\"></i> Go Back</button>";
+
+                    jQuery('#footerClient').html(string);
+                }
+            }
+        });
+    }
+</script> -->
 
 
 
