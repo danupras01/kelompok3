@@ -33,10 +33,10 @@
               <td><?= lang('total_member'); ?>:</td>
               <td style="text-align: right; font-weight: bold;"><?php print_r($sumMembers); ?></td>
             </tr>
-            <tr>
-              <td><?= lang('total_books_price'); ?>:</td>
+<!--             <tr>
+              <td><?= //lang('total_books_price'); ?>:</td>
               <td style="text-align: right; font-weight: bold;"><?= $settings->currency; ?> <?= ($sumBookPrices); ?></td>
-            </tr> 
+            </tr>  -->
             <tr>
               <td><?= lang('total_books_lost'); ?>:</td>
               <td style="text-align: right; font-weight: bold;"><?= $countBooksLost; ?></td>
