@@ -306,6 +306,7 @@ function pqFormat(x) {
         									<p>Digital File : <a href="<?php echo base_url().'files/'.$books->digital_file;?>" target="_blank"><?php echo $books->digital_file;?></a></p>
 
         									<p>Penulis : <?php echo $books->author_name;?></p>
+        									<p>Kategori : <?php echo $books->category_name;?></p>
         									<p>Copyright : <?php echo $books->copyright_year;?></p>
         									<p>Jumlah Halaman : <?php echo substr($books->custom_fields,25,-2);?> </p>
         									<p>ISBN : <?php echo $books->isbn;?> </p>

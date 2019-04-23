@@ -160,10 +160,9 @@ class Home extends MY_Controller {
     function rincian_buku($id){
       $data = array();
       
-      $data["books"] = $this->home_model->getBookDetByID($id);  
+      $data["books"] = $this->home_model->get_book_detail_by_id($id);  
       $data["categories"] = $this->home_model->getAllCategories();
-      $data["authors"] = $this->home_model->getAllAuthors();
-      $data["categories"] = $this->home_model->getAllCategories();
+      $data["authors"] = $this->home_model->getAllAuthors(); 
 
       // var_dump($data["books"]); exit();
 
