@@ -183,7 +183,7 @@ class Books extends Admin_Controller {
                 $this->excel->setActiveSheetIndex(0);
                 $this->excel->getActiveSheet()->setTitle("Books Report");
                 $this->excel->getActiveSheet()->SetCellValue('A1', "ISBN");
-                $this->excel->getActiveSheet()->SetCellValue('B1', "Book Title");
+                $this->excel->getActiveSheet()->SetCellValue('B1', "Judul Buku");
                 $this->excel->getActiveSheet()->SetCellValue('C1', "Authors");
                 $this->excel->getActiveSheet()->SetCellValue('D1', "Book Publisher");
                 $this->excel->getActiveSheet()->SetCellValue('E1', "Price");
@@ -329,7 +329,7 @@ class Books extends Admin_Controller {
         // $this->form_validation->set_rules();
         $this->form_validation->set_rules('isbn', 'ISBN', 'required');
         $this->form_validation->set_rules('isbn_13', 'ISBN 13', 'required');
-        $this->form_validation->set_rules('book_title', 'Book Title', 'required');
+        $this->form_validation->set_rules('book_title', 'Judul Buku', 'required');
         $this->form_validation->set_rules('category_id[]', 'Category', 'required');
         $this->form_validation->set_rules('author_id[]', 'Author', 'required');
         $this->form_validation->set_rules('book_copies', 'No. Of Copies', 'required');
@@ -508,7 +508,7 @@ class Books extends Admin_Controller {
 
         $this->form_validation->set_rules('isbn', 'ISBN', 'required');
         $this->form_validation->set_rules('isbn_13', 'ISBN 13', 'required');
-        $this->form_validation->set_rules('book_title', 'Book Title', 'required');
+        $this->form_validation->set_rules('book_title', 'Judul Buku', 'required');
         $this->form_validation->set_rules('category_id[]', 'Category', 'required');
         $this->form_validation->set_rules('author_id[]', 'Author', 'required');
         $this->form_validation->set_rules('book_copies', 'No. Of Copies', 'required');

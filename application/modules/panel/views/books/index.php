@@ -240,7 +240,7 @@ function pqFormat(x) {
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-9 bio-row">
-                            <p><span class="bold"><i class="fa fa-user"></i> Book Title </span><span id="v_book_title"></span></p>
+                            <p><span class="bold"><i class="fa fa-user"></i> Judul Buku </span><span id="v_book_title"></span></p>
                         </div>
                         <div class="col-md-12 col-lg-5 bio-row">
                             <p><span class="bold"><i class="fa fa-user"></i> Book Copies </span><span id="v_book_copies"></span></p>

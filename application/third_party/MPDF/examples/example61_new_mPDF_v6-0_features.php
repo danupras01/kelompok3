@@ -749,7 +749,7 @@ First Strong Isolate (FSI)
 
 
 <h4>First strong isolate (FSI)</h4>
-<p>FSI is useful when including text within a paragraph where the directionality of the text is unknown. For example, if you are printing out a catalogue from a database of book titles and the number of readers, when some book titles are in right-to-left script, you may use this template:</p>
+<p>FSI is useful when including text within a paragraph where the directionality of the text is unknown. For example, if you are printing out a catalogue from a database of Judul Bukus and the number of readers, when some Judul Bukus are in right-to-left script, you may use this template:</p>
 
 <p class="code">
 &lt;li&gt;Title: {TITLE} - {READERS} readers&lt;/li&gt;

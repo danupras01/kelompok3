@@ -23,7 +23,7 @@ $lang['tommorow_dues'] = 'Tomorrow Dues';
 
 $lang['books_name_label'] = 'Book Name';
 $lang['borrower_name_label'] = 'Borrower Name';
-$lang['date_borrow_label'] = 'Date Borrow';
+$lang['date_borrow_label'] = 'Tanggal Peminjaman';
 $lang['contact_label'] = 'Contact';
 $lang['no_dues'] = 'No Dues for Today';
 $lang['no_dues_tommorow'] = 'No Dues for Tomorrow';

@@ -17,7 +17,7 @@ $lang['due_date_label'] = 'Due Date';
 
 $lang['image_label'] = 'Image';
 $lang['category_label'] = 'Category';
-$lang['book_label'] = 'Book Title';
+$lang['book_label'] = 'Judul Buku';
 $lang['price_label'] = 'Price';
 $lang['isbn_label'] = 'ISBN';
 $lang['avail_label'] = 'Available Copies';
@@ -27,7 +27,7 @@ $lang['yes_title'] = 'Yes';
 $lang['no_title'] = 'No';
 
 $lang['borrower_name_label'] = 'Name';
-$lang['date_borrow_label'] = 'Date Borrow';
+$lang['date_borrow_label'] = 'Tanggal Peminjaman';
 $lang['date_return_label'] = 'Return Date';
 $lang['status_label'] = 'Status';
 $lang['read_label'] = 'Read';

@@ -124,7 +124,7 @@ class Delayed extends Admin_Controller {
                 $message = ($this->input->post('message') != '') ? $this->input->post('message') : file_get_contents('application/views/email_templates/due.html');
                 $books = '';
                 foreach ($dues as $due) {
-                    $books .= '<span style="font-size: 20px">Book Title: '.$due->title.'</span><br>Date Borrow: '.$due->date_borrow . '<br><span style="color: red">Due Date: '.$due->due_date.'</span><br><br>';
+                    $books .= '<span style="font-size: 20px">Judul Buku: '.$due->title.'</span><br>Tanggal Peminjaman: '.$due->date_borrow . '<br><span style="color: red">Jatuh Tempo: '.$due->due_date.'</span><br><br>';
                     $message = str_replace("{contact_person}", $due->name ,$message);
                 }
                 $message = str_replace("{books}", $books ,$message);
